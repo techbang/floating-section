@@ -8,4 +8,6 @@
 * footer = $("#footer") // footer 框架
 * content = $("#content") // 頁面主框架
 * header = $("#header") // header 框架
+* left_content = $(".main-content") // 左側視窗
+* sidebar = $("#sidebar") // Sidebar
 * headerMayFloat = true // header 是否會浮動
