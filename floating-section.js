@@ -8,7 +8,7 @@
     header = $("#header"), // header 框架
     left_content = $(".main-content"), // 左側視窗
     sidebar = $("#sidebar"), // Sidebar
-    headerMayFloat = true, // header 是否會浮動
+    headerMayFloat = false, // header 是否會浮動
     floatingHeight = floating.outerHeight(), // 浮動框架高度
     floatingTop = floating.offset().top, // 浮動框架 top 位置
     floatingLeft = floating.offset().left,  // 浮動框架 left 位置
