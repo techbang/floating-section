@@ -1,4 +1,4 @@
-(function (){
+$(function() {
   var floating = $("#floating_section");
 
   if (floating.length <= 0 ) return;
@@ -55,4 +55,4 @@
     floatingSectionMove();
   });
 
-})();
+});
