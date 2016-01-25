@@ -16,7 +16,6 @@ $(function() {
     contentTop, // 頁面主框架 top 位置
     footerTop, // footer 框架 top 位置
     headerHeight = (header && headerMayFloat) ? header.outerHeight() : 0, // header 框架高度
-    ie = !-[1,], // IE 檢查機制
     bottom_distances, // 主框架與 footer 間距
     fixedCSS = {"top": headerHeight + "px", "position": "fixed"},
     staticCSS = {"position": "static"};
@@ -41,11 +40,6 @@ $(function() {
       floating.css(staticCSS); // 標準位置
     }
   };
-
-  if (ie){
-    fixedCSS.left = floatingLeft + "px";
-    staticCSS.left = floatingLeft + "px";
-  }
 
   $(window).scroll(function(){
     floatingSectionMove();
